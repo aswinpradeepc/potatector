@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+/* General styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/home/aswin/WebstormProjects/potatector/public/back.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.upload-section {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.file-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="file"] {
+    margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.response-section {
+    background-color: #a3f57d;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 900px; /* Set maximum width */
+    width: 100%; /* Ensure responsiveness */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.result {
+    background-color: #f5cd89;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.result p {
+    margin-bottom: 10px;
+}
+
+.result strong {
+    font-weight: bold;
 }
